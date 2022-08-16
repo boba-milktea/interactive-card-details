@@ -33,17 +33,17 @@ Users should be able to:
 
 ### Screenshot
 
-- focus states with the linear gradient border
-  <img src="./images/Screenshots/Focus"  width="600px">
+- Focus states with the linear gradient border
+  <img src="./images/Screenshots/Focus.png"  width="600">
 
-- when the input value isn't the rigth format
-  <img src="./images/Screenshots/Wrong"  width="600px">
+- When the input value isn't the rigth format
+  <img src="./images/Screenshots/Wrong.png"  width="600">
 
-- after correcting the value
-  <img src="./images/Screenshots/Correct"  width="600px">
+- After correcting the value
+  <img src="./images/Screenshots/Correct.png"  width="600">
 
-- thank you card after sucessfully submitted the form
-  <img src="./images/Screenshots/Complete"  width="600px">
+- Thank you card after sucessfully submitted the form
+  <img src="./images/Screenshots/Complete.png"  width="600">
 
 ### Links
 
