@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(270, 3%, 87%);
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="background">
+          <div class="card-front-container">
+            <img
+              class="card-img"
+              id="bg-card-front"
+              src="./images/bg-card-front.png"
+              alt="front side of the bank card"
+            />
+            <img id="card-logo" src="./images/card-logo.svg" alt="" />
+            <div class="card-detail-number" id="card-number">
+              0000&nbsp;0000&nbsp;0000&nbsp;0000
+            </div>
+            <div class="card-detail-name" id="card-name">Jane Appleseed</div>
+            <div class="card-detail-date">
+              <span id="card-month">00</span>/<span id="card-year">00</span>
+            </div>
+          </div>
+          <div class="card-back-container">
+            <img
+              class="card-img"
+              id="bg-card-back"
+              src="./images/bg-card-back.png"
+              alt="back side of the bank card"
+            />
+            <div class="card-detail-cvc" id="card-cvc">000</div>
+          </div>
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Catherine</a>.
+          </div>
+        </div>
+
+        <div class="thank-card" id="thank-you" style="display: none">
+          <img src="./images/icon-complete.svg" alt="" />
+          <h2>Thank you!</h2>
+          <p>We've added your card details</p>
+          <button class="complete-btn">Continue</button>
+        </div>
+
+        <form action="" class="form-container" id="card-form">
+          <div class="form-control-name">
+            <label for="name" class="form-label">Cardholder Name</label>
+            <input
+              type="text"
+              class="form-input"
+              name="name"
+              id="name"
+              placeholder="e.g. Jane Appleseed"
+            />
+            <span class="error-text" aria-live="polite"></span>
+          </div>
+          <div class="form-control-number">
+            <label for="number" class="form-label">Card Number</label>
+            <input
+              type="text"
+              class="form-input"
+              name="number"
+              id="number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+            <span class="error-text" aria-live="polite"></span>
+          </div>
+          <div class="form-control-date">
+            <fieldset>
+              <legend class="form-label">Exp. Date (MM/YY)</legend>
+
+              <lablel for="exp-month" class="form-label visually-hidden"
+                >month</lablel
+              >
+              <input
+                type="text"
+                class="date-input"
+                name="month"
+                id="exp-month"
+                placeholder="MM"
+                maxlength="2"
+              />&nbsp
+              <lablel for="exp-year" class="form-label visually-hidden"
+                >year</lablel
+              >
+              <input
+                type="text"
+                class="date-input"
+                name="year"
+                id="exp-year"
+                placeholder="YY"
+                maxlength="2"
+              /><br />
+              <span class="error-text" aria-live="polite"></span>
+            </fieldset>
+          </div>
+          <div class="form-control-cvc">
+            <label for="cvc" class="form-label">CVC</label>
+            <input
+              type="text"
+              class="cvc-input"
+              id="cvc"
+              name="cvc"
+              placeholder="e.g.123"
+              maxlength="3"
+            />
+            <span class="error-text" aria-live="polite"></span>
+          </div>
+          <button type="submit" id="btn" class="confirm-btn">Confirm</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
