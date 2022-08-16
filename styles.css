@@ -296,40 +296,47 @@ p {
 
   .card-front-container {
     color: white;
-    width: 80%;
+    width: 90%;
     height: 30%;
     top: 10vw;
     left: 14vw;
   }
 
+  #card-logo {
+    width: 18%;
+    top: 1.6em;
+    left: 1.8em;
+  }
+
   .card-detail-number {
-    font-size: 1.7vw;
+    font-size: 1.9vw;
   }
 
   .card-detail-name {
-    font-size: 0.9vw;
+    font-size: 1vw;
   }
 
   .card-detail-date {
-    font-size: 0.9vw;
+    font-size: 1vw;
   }
 
   .card-back-container {
-    width: 80%;
+    width: 90%;
     height: 30%;
-    top: 27vw;
+    top: 29vw;
     right: 0;
     left: 20vw;
   }
 
   .card-detail-cvc {
-    font-size: 0.9vw;
+    font-size: 1vw;
     top: 7.4em;
   }
 
   .form-container {
     grid-column: 8/11;
     grid-row: 2/3;
+    top: -3rem;
   }
 
   .form-label {
