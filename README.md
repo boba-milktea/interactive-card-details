@@ -47,8 +47,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Github repo](https://github.com/boba-milktea/interactive-card-details.git)
+- [Github page ](https://boba-milktea.github.io/interactive-card-details/)
 
 ## My process
 
